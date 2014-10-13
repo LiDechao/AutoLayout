@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 static int tmp = 1;
 static NSString *str;
@@ -28,6 +29,7 @@ static NSString *str2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     str = @"64位处理器有两大优点，可以进行更大范围的整数运算，可支持更大的内存。但是现在呢，首先iPhone 6是配的1GB内存，而国产采用骁龙410的智能手机，居然也只配了1GB内存，说好的4GB内存去哪了呢。听说索尼下一代旗舰会采用骁龙810处理器，搭配4GB内存，我觉得这还是可以理解的，并且会发挥64位的效能，否则的话，64位处理器我们就当32位处理器看待就好了。当然，如果是原价不变的升级，还是很可以接受的，同时，如果是一个负责任的厂商，未来还会推送Android L操作系统，那就更好了。但现在看，64位处理器除非在旗舰机上，否则可以忽略。";
     str2 = @"小米昨日低调发布四款智能家居新品，小米智能家居系统又添新。有人认为，小米智能家居生态正在日益完善，但也有诸多质疑，数据和生态智慧的不完善，小米硬件销量下滑，让看上去很美的智能家居梦短期难圆。";
     
@@ -35,7 +37,10 @@ static NSString *str2;
     topLabel.translatesAutoresizingMaskIntoConstraints = NO;
     topLabel.backgroundColor = [UIColor lightGrayColor];
     topLabel.numberOfLines = 0;
-    topLabel.text = str;
+    topLabel.text = @"选我选我选我选我选我选我";
+    topLabel.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tt = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nextContro)];
+    [topLabel addGestureRecognizer:tt];
     [self.view addSubview:topLabel];
     
     secondLabel = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -111,6 +116,11 @@ static NSString *str2;
     }
     tmp += 1;
     
+}
+
+- (void)nextContro
+{
+    [self.navigationController pushViewController:[[SecondViewController alloc] init] animated: NO];
 }
 
 @end

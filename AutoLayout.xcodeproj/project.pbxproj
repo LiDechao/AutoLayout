@@ -14,6 +14,8 @@
 		F4ACDC9719E7B8E9009CF29D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4ACDC9619E7B8E9009CF29D /* Images.xcassets */; };
 		F4ACDC9A19E7B8E9009CF29D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ACDC9819E7B8E9009CF29D /* LaunchScreen.xib */; };
 		F4ACDCA619E7B8E9009CF29D /* AutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ACDCA519E7B8E9009CF29D /* AutoLayoutTests.m */; };
+		F4CE104719E93254002A6AA6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE104619E93254002A6AA6 /* SecondViewController.m */; };
+		F4CE104A19E9347F002A6AA6 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CE104919E9347F002A6AA6 /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		F4ACDC9F19E7B8E9009CF29D /* AutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4ACDCA419E7B8E9009CF29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4ACDCA519E7B8E9009CF29D /* AutoLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutTests.m; sourceTree = "<group>"; };
+		F4CE104519E93254002A6AA6 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F4CE104619E93254002A6AA6 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F4CE104819E9347F002A6AA6 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		F4CE104919E9347F002A6AA6 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 		F4ACDC7D19E7B8E9009CF29D = {
 			isa = PBXGroup;
 			children = (
+				F4CE104819E9347F002A6AA6 /* MyView.h */,
+				F4CE104919E9347F002A6AA6 /* MyView.m */,
+				F4CE104519E93254002A6AA6 /* SecondViewController.h */,
+				F4CE104619E93254002A6AA6 /* SecondViewController.m */,
 				F4ACDC8819E7B8E9009CF29D /* AutoLayout */,
 				F4ACDCA219E7B8E9009CF29D /* AutoLayoutTests */,
 				F4ACDC8719E7B8E9009CF29D /* Products */,
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CE104719E93254002A6AA6 /* SecondViewController.m in Sources */,
 				F4ACDC9219E7B8E9009CF29D /* ViewController.m in Sources */,
 				F4ACDC8F19E7B8E9009CF29D /* AppDelegate.m in Sources */,
 				F4ACDC8C19E7B8E9009CF29D /* main.m in Sources */,
+				F4CE104A19E9347F002A6AA6 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 				F4ACDCAB19E7B8E9009CF29D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4ACDCAC19E7B8E9009CF29D /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				F4ACDCAE19E7B8E9009CF29D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
